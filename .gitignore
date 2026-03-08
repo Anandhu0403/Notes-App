@@ -1,0 +1,15 @@
+.env
+node_modules
+dist
+coverage
+*.log
+.DS_Store
+
+# Ignore IDE specific files
+.vscode/
+.idea/  
+# Ignore OS specific files
+Thumbs.db
+Desktop.ini
+# Ignore build artifacts
+build/
