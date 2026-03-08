@@ -1,0 +1,8 @@
+{
+  "name": "notes-app",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "npm install --prefix Frontend/MernTHinker && npm run build --prefix Frontend/MernTHinker && npm install --prefix Backend",
+    "start": "set NODE_ENV=production && npm run start --prefix Backend"
+  }
+}

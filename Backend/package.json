@@ -6,7 +6,8 @@
     "dotenv": "^17.3.1",
     "express": "^5.2.1",
     "moongose": "^1.0.0",
-    "nodemon": "^3.1.14"
+    "nodemon": "^3.1.14",
+    "notes-app": "file:.."
   },
   "name": "backend",
   "version": "1.0.0",
