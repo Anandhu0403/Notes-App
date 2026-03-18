@@ -1,17 +1,21 @@
-import moongose,{Schema} from 'mongoose'
+import moongose, { Schema } from 'mongoose'
 
-const noteSchema=new Schema({   
-    title:{
-        type:String,
-        required:true
+const noteSchema = new Schema({
+    title: {
+        type: String,
+        required: true
     },
-    content:{
-        type:String,
-        required:true
+    content: {
+        type: String,
+        required: true
     },
-},{
-    timestamps:true
+    pinned: {
+        type: Boolean,
+        required: false
+    }
+}, {
+    timestamps: true
 })
-const Note=moongose.model('Note',noteSchema)
+const Note = moongose.model('Note', noteSchema)
 
-export  {Note} 
+export { Note } 

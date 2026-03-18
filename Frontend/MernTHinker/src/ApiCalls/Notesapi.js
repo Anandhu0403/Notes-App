@@ -53,3 +53,16 @@ export const getNoteById = async (id) => {
     throw error;
   }
 } 
+export const pinNote=async (id)=> {
+  try{
+    const res=await axios.post(`${API_BASE}/notes/pin/${id}`)
+    return res;
+  }
+  catch (error){
+      {
+    console.error('Error fetching note:', error);
+    throw error;
+
+  }
+  }
+}

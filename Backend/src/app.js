@@ -15,9 +15,6 @@ app.use(cors());
 app.use(express.json());
 app.use('/api', ratelimiter);
 app.use('/api/v1/notes', notesRoutes)
-console.log("NODE_ENV raw:", process.env.NODE_ENV)
-console.log("NODE_ENV type:", typeof process.env.NODE_ENV)
-console.log("NODE_ENV equals production:", process.env.NODE_ENV === "production")
 if (process.env.NODE_ENV?.trim() === "production") {
 
     const distPath = path.join(__dirname, '../../Frontend/MernTHinker/dist')

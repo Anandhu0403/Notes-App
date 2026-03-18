@@ -4,7 +4,7 @@ import app from './src/app.js'
 import { CONNECT_DB } from './src/config/db.js'
 const PORT = process.env.PORT || 5000
 try{
-      console.log("MONGO_URI:", process.env.MONGO_URI)
+      
     await CONNECT_DB();
    
 const startserver=()=>{app.listen(PORT, () => {
